@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            p {color:red}
+        </style>
+        <title>SET08101 - Interacting with the DOM</title>
+    </head>
+    <body >
+        <p><a href="#" onClick="colourChanger();">Click Me</a></p>
+        <h1>OUTPUT:</h1>
+        <p id="redPara">I am RED</p>
+
+        <script>
+            var current="red";
+            
+            function colourChanger() 
+            { 
+                if(current === "red")
+                    current = "blue";
+                else
+                    current = "red";
+
+                document.getElementById("redPara").style.color = current;
+            }      
+        </script>
+    </body>
+</html>
+
